@@ -14,12 +14,18 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-		int i, j, num = 1;
 		int lines = 5;
 		for (int i = 0; i < lines; i++) {
-			for (int j = 0; j < i+1; j++) {
-				System.out.print(j);
+            for (int j=lines-i; j>1; j--) 
+            { 
+                // printing spaces 
+                System.out.print(" "); 
+            } 
+			for (int j = 0; j <= i; j++) 
+			{
+				System.out.print(i+1 + " ");
 			}
+			
 			System.out.println("");
 		}
 	}
