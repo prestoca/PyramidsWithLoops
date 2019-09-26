@@ -19,19 +19,19 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 5; i++) {	//outer for loop number of rows
+		for (int i = 0; i < 5; i++) {	//outer for loop number of rows, this entire loop stops at 5
 			
-            for (int j=5-i; j>1; j--)	//creates spaces for pyramid shape
+            for (int j=5-i; j>1; j--)	//counting number of spaces for pyramid shape, total rows - i increment
             {  
-                System.out.print(" "); 	//prints spaces for shape
+                System.out.print(" "); 	
             } 
-			for (int j = 0; j <=i*2; j++)	//creates numbers in pyramid, one less than the number of rows * 2
+			for (int j = 0; j <=i*2; j++)	//the amount of numbers in the pyramid, one less than the i increment * 2
 			{
-				
-				System.out.print(i+1);	//prints the numbers in pyramid
+				System.out.print(i+1);	//the number in pyramid, i increment +1
 			}
 			
-			System.out.println(" ");
+			System.out.println(" "); 
+			
 		}
 	}
 }
